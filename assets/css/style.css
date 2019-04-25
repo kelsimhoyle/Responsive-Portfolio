@@ -30,7 +30,7 @@ header {
 
 nav {
     float: right;
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 ul {
@@ -165,7 +165,7 @@ footer p {
 .mainContent {
     box-sizing: border-box;
     width: 960px;
-    padding: 20px;
+    padding: 25px;
     margin: 25px auto;
     background-color: #ffffff;
     border: 2px solid #dddddd;
@@ -209,7 +209,7 @@ footer p {
 
 input[type="text"],
 input[type="email"] {
-    width: 98%;
+    width: 95%;
     font-size: 14px;
     color: #777777;
     padding: 5px;
@@ -222,10 +222,15 @@ label {
 
 textarea {
     box-sizing: border-box;
-    width: 99%;
+    width: 97%;
     height: 200px;
     font-size: 14px;
     color: #777777;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+border: 2px solid lightgray;
 }
 
 button {
@@ -243,6 +248,62 @@ button {
 
 /* tablet view */
 @media only screen and (max-width: 768px) {
+    body {
+        margin-bottom: 75px;
+    }
+
+    .mainContent {
+        width: 95%;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.25;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .headerContent {
+        margin: 0 20px;
+    }
+
+    /* about me page */
+
+    #portrait {
+        width: 45%;
+    }
+
+        /* portfolio page */
+
+    .project {
+        width: 45%;
+        margin: 25px 25px 25px 0;
+    }
+
+    a img {
+        width: 100%;
+    }
+
+    .projectTitle {
+        padding: 10px;
+        margin-top: -50px;
+    }
+
+
+    footer {
+        padding: 15px;
+        border-top: 5px solid #4aaaa5;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
 
 }
 
@@ -269,10 +330,21 @@ button {
 
     h2 {
         font-size: 18px;
+        padding: 20px 0;
     }
 
-    nav {
-        width: 100%;
+    .nav{
+        margin: auto;
+        text-align:center;
+        float: none;
+    }
+    nav li{
+        display:inline;
+        float: none;
+    }
+    nav a{
+        display:inline-block;
+        padding:10px;
     }
 
 
@@ -285,7 +357,7 @@ button {
     .mainContent {
         width: 95%;
         margin: auto;
-        padding: 5px;
+        padding: 10px;
         line-height: 1.5;
     }
 
@@ -294,4 +366,17 @@ button {
         padding: 10px;
         border-top: 5px solid #4aaaa5;
     }
+
+    .project {
+        width: 95%;
+        height: auto;
+        display: block;
+        margin: 25px auto;
+    }
+
+    a img {
+        width: 100%;
+        height: auto;
+    }
+
 }
