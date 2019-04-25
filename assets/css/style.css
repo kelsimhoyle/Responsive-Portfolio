@@ -1,6 +1,6 @@
 body {
     background-image: url(../images/qbkls.png);
-    margin-bottom: 20px;
+    margin-bottom: 90px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
 }
@@ -35,18 +35,13 @@ nav {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
-li {
+nav li {
+    padding: 5px;
     float: left;
 }
-li a {
-    padding: 0 10px;
-    float: left;
-}
-li:not(:last-child) {
+nav li:not(:last-child) {
     border-right: 2px solid #dddddd;
 }
 
@@ -132,9 +127,6 @@ ul {
     padding: 0;
 }
 
-li {
-    float: left;
-}
 li a {
     padding: 0 10px;
     float: left;
@@ -150,13 +142,13 @@ footer {
     left: 0;
     width: 100%;
     background-color: #666666;
-    padding-top: 40px;
     border-top: 10px solid #4aaaa5;
     align-content: center;
 }
 
 footer p {
     color: #fff;
+    padding-top: 40px;
     line-height: 125%;
     text-align: center;
 }
@@ -243,6 +235,27 @@ button {
 
 
 @media only screen and (max-width: 980px) {
+    body {
+        margin-bottom: 30px;
+    }
+
+    .mainContent {
+        margin-left: 5%;
+        margin-right: 30%;
+        width: 65%;
+    }
+
+    .headerContent {
+        margin: 0 5%;
+    }
+
+    footer {
+        border-top: 5px solid #4aaaa5;
+    }
+
+    footer p {
+        padding: 12px;
+    }
 
 }
 
@@ -256,10 +269,12 @@ button {
         width: 95%;
     }
 
+
     p {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.25;
     }
+
 
     h1 {
         font-size: 28px;
@@ -271,6 +286,15 @@ button {
 
     .headerContent {
         margin: 0 20px;
+    }
+
+    nav {
+        padding: 15px;
+    }
+
+    nav li {
+        float: none;
+        display: inline-block;
     }
 
     /* about me page */
@@ -311,7 +335,7 @@ button {
 @media only screen and (max-width: 640px) {
     body {
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 75px;
         font-size: 14px;
     }
 
@@ -319,6 +343,20 @@ button {
         width: 100%;
         text-align: center;
         margin-bottom: 10px;
+    }
+
+    .headerContent {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav {
+        float: none;
+        text-align: center;
+    }
+
+    ul a {
+        margin: auto;
     }
 
     h1 {
@@ -332,21 +370,6 @@ button {
         font-size: 18px;
         padding: 20px 0;
     }
-
-    .nav{
-        margin: auto;
-        text-align:center;
-        float: none;
-    }
-    nav li{
-        display:inline;
-        float: none;
-    }
-    nav a{
-        display:inline-block;
-        padding:10px;
-    }
-
 
     #portrait {
         float: none;
